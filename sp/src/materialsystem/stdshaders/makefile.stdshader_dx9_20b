@@ -1,0 +1,960 @@
+default:  fxctmp9_tmp\pbr_vs20b.inc shaders\fxc\pbr_vs20b.vcs fxctmp9_tmp\pbr_ps20b.inc shaders\fxc\pbr_ps20b.vcs fxctmp9_tmp\SDK_skin_ps20b.inc shaders\fxc\SDK_skin_ps20b.vcs fxctmp9_tmp\SDK_skin_vs20.inc shaders\fxc\SDK_skin_vs20.vcs fxctmp9_tmp\SDK_vertexlit_and_unlit_generic_bump_ps20.inc shaders\fxc\SDK_vertexlit_and_unlit_generic_bump_ps20.vcs fxctmp9_tmp\SDK_vertexlit_and_unlit_generic_bump_ps20b.inc shaders\fxc\SDK_vertexlit_and_unlit_generic_bump_ps20b.vcs fxctmp9_tmp\SDK_vertexlit_and_unlit_generic_bump_ps20b.inc shaders\fxc\SDK_vertexlit_and_unlit_generic_bump_ps20b.vcs fxctmp9_tmp\SDK_vertexlit_and_unlit_generic_bump_vs20.inc shaders\fxc\SDK_vertexlit_and_unlit_generic_bump_vs20.vcs fxctmp9_tmp\SDK_vertexlit_and_unlit_generic_ps20.inc shaders\fxc\SDK_vertexlit_and_unlit_generic_ps20.vcs fxctmp9_tmp\SDK_vertexlit_and_unlit_generic_ps20b.inc shaders\fxc\SDK_vertexlit_and_unlit_generic_ps20b.vcs fxctmp9_tmp\SDK_vertexlit_and_unlit_generic_ps20b.inc shaders\fxc\SDK_vertexlit_and_unlit_generic_ps20b.vcs fxctmp9_tmp\SDK_vertexlit_and_unlit_generic_vs20.inc shaders\fxc\SDK_vertexlit_and_unlit_generic_vs20.vcs fxctmp9_tmp\SDK_cloak_blended_pass_ps20.inc shaders\fxc\SDK_cloak_blended_pass_ps20.vcs fxctmp9_tmp\SDK_cloak_blended_pass_ps20b.inc shaders\fxc\SDK_cloak_blended_pass_ps20b.vcs fxctmp9_tmp\SDK_cloak_blended_pass_vs20.inc shaders\fxc\SDK_cloak_blended_pass_vs20.vcs fxctmp9_tmp\SDK_emissive_scroll_blended_pass_ps20.inc shaders\fxc\SDK_emissive_scroll_blended_pass_ps20.vcs fxctmp9_tmp\SDK_emissive_scroll_blended_pass_ps20b.inc shaders\fxc\SDK_emissive_scroll_blended_pass_ps20b.vcs fxctmp9_tmp\SDK_emissive_scroll_blended_pass_vs20.inc shaders\fxc\SDK_emissive_scroll_blended_pass_vs20.vcs fxctmp9_tmp\SDK_flesh_interior_blended_pass_ps20.inc shaders\fxc\SDK_flesh_interior_blended_pass_ps20.vcs fxctmp9_tmp\SDK_flesh_interior_blended_pass_ps20b.inc shaders\fxc\SDK_flesh_interior_blended_pass_ps20b.vcs fxctmp9_tmp\SDK_flesh_interior_blended_pass_vs20.inc shaders\fxc\SDK_flesh_interior_blended_pass_vs20.vcs fxctmp9_tmp\SDK_flashlight_ps20.inc shaders\fxc\SDK_flashlight_ps20.vcs fxctmp9_tmp\SDK_flashlight_ps20b.inc shaders\fxc\SDK_flashlight_ps20b.vcs fxctmp9_tmp\SDK_flashlight_ps11.inc shaders\fxc\SDK_flashlight_ps11.vcs fxctmp9_tmp\SDK_lightmappedgeneric_decal_ps20.inc shaders\fxc\SDK_lightmappedgeneric_decal_ps20.vcs fxctmp9_tmp\SDK_lightmappedgeneric_decal_ps20b.inc shaders\fxc\SDK_lightmappedgeneric_decal_ps20b.vcs fxctmp9_tmp\SDK_lightmappedgeneric_decal_vs20.inc shaders\fxc\SDK_lightmappedgeneric_decal_vs20.vcs fxctmp9_tmp\SDK_lightmappedgeneric_flashlight_vs11.inc shaders\fxc\SDK_lightmappedgeneric_flashlight_vs11.vcs fxctmp9_tmp\SDK_lightmappedgeneric_flashlight_vs20.inc shaders\fxc\SDK_lightmappedgeneric_flashlight_vs20.vcs fxctmp9_tmp\SDK_lightmappedgeneric_flashlight_ps20.inc shaders\fxc\SDK_lightmappedgeneric_flashlight_ps20.vcs fxctmp9_tmp\SDK_lightmappedgeneric_flashlight_ps20b.inc shaders\fxc\SDK_lightmappedgeneric_flashlight_ps20b.vcs fxctmp9_tmp\SDK_lightmappedgeneric_lightingonly_overbright2_ps11.inc shaders\fxc\SDK_lightmappedgeneric_lightingonly_overbright2_ps11.vcs fxctmp9_tmp\SDK_lightmappedgeneric_lightingonly_vs11.inc shaders\fxc\SDK_lightmappedgeneric_lightingonly_vs11.vcs fxctmp9_tmp\SDK_lightmappedgeneric_ps20b.inc shaders\fxc\SDK_lightmappedgeneric_ps20b.vcs fxctmp9_tmp\SDK_lightmappedgeneric_ps11.inc shaders\fxc\SDK_lightmappedgeneric_ps11.vcs fxctmp9_tmp\SDK_lightmappedgeneric_vs20.inc shaders\fxc\SDK_lightmappedgeneric_vs20.vcs fxctmp9_tmp\SDK_lightmappedreflective_ps20.inc shaders\fxc\SDK_lightmappedreflective_ps20.vcs fxctmp9_tmp\SDK_lightmappedreflective_ps20b.inc shaders\fxc\SDK_lightmappedreflective_ps20b.vcs fxctmp9_tmp\SDK_lightmappedreflective_vs20.inc shaders\fxc\SDK_lightmappedreflective_vs20.vcs fxctmp9_tmp\SDK_unlitgeneric_ps20.inc shaders\fxc\SDK_unlitgeneric_ps20.vcs fxctmp9_tmp\SDK_unlitgeneric_ps20b.inc shaders\fxc\SDK_unlitgeneric_ps20b.vcs fxctmp9_tmp\SDK_unlitgeneric_ps11.inc shaders\fxc\SDK_unlitgeneric_ps11.vcs fxctmp9_tmp\SDK_unlitgeneric_vs20.inc shaders\fxc\SDK_unlitgeneric_vs20.vcs fxctmp9_tmp\SDK_vertexlit_lighting_only_ps20.inc shaders\fxc\SDK_vertexlit_lighting_only_ps20.vcs fxctmp9_tmp\SDK_vertexlit_lighting_only_ps20b.inc shaders\fxc\SDK_vertexlit_lighting_only_ps20b.vcs fxctmp9_tmp\SDK_vertexlitgeneric_lightingonly_overbright2_ps11.inc shaders\fxc\SDK_vertexlitgeneric_lightingonly_overbright2_ps11.vcs fxctmp9_tmp\SDK_worldtwotextureblend_ps20.inc shaders\fxc\SDK_worldtwotextureblend_ps20.vcs fxctmp9_tmp\SDK_worldtwotextureblend_ps20b.inc shaders\fxc\SDK_worldtwotextureblend_ps20b.vcs fxctmp9_tmp\SDK_WorldVertexTransition_ps20.inc shaders\fxc\SDK_WorldVertexTransition_ps20.vcs fxctmp9_tmp\SDK_WorldVertexTransition_ps20b.inc shaders\fxc\SDK_WorldVertexTransition_ps20b.vcs fxctmp9_tmp\SDK_WorldVertexTransition_vs20.inc shaders\fxc\SDK_WorldVertexTransition_vs20.vcs fxctmp9_tmp\SDK_refract_ps20.inc shaders\fxc\SDK_refract_ps20.vcs fxctmp9_tmp\SDK_refract_ps20b.inc shaders\fxc\SDK_refract_ps20b.vcs fxctmp9_tmp\SDK_Refract_vs20.inc shaders\fxc\SDK_Refract_vs20.vcs fxctmp9_tmp\SDK_water_ps20.inc shaders\fxc\SDK_water_ps20.vcs fxctmp9_tmp\SDK_water_ps20b.inc shaders\fxc\SDK_water_ps20b.vcs fxctmp9_tmp\SDK_Water_vs20.inc shaders\fxc\SDK_Water_vs20.vcs fxctmp9_tmp\SDK_WaterCheap_ps20.inc shaders\fxc\SDK_WaterCheap_ps20.vcs fxctmp9_tmp\SDK_WaterCheap_ps20b.inc shaders\fxc\SDK_WaterCheap_ps20b.vcs fxctmp9_tmp\SDK_WaterCheap_vs20.inc shaders\fxc\SDK_WaterCheap_vs20.vcs fxctmp9_tmp\SDK_depthwrite_ps20.inc shaders\fxc\SDK_depthwrite_ps20.vcs fxctmp9_tmp\SDK_depthwrite_ps20b.inc shaders\fxc\SDK_depthwrite_ps20b.vcs fxctmp9_tmp\SDK_depthwrite_vs20.inc shaders\fxc\SDK_depthwrite_vs20.vcs fxctmp9_tmp\SDK_splinerope_ps20.inc shaders\fxc\SDK_splinerope_ps20.vcs fxctmp9_tmp\SDK_splinerope_ps20b.inc shaders\fxc\SDK_splinerope_ps20b.vcs fxctmp9_tmp\SDK_splinerope_vs20.inc shaders\fxc\SDK_splinerope_vs20.vcs fxctmp9_tmp\SDK_eye_refract_ps20.inc shaders\fxc\SDK_eye_refract_ps20.vcs fxctmp9_tmp\SDK_eye_refract_ps20b.inc shaders\fxc\SDK_eye_refract_ps20b.vcs fxctmp9_tmp\SDK_eye_refract_vs20.inc shaders\fxc\SDK_eye_refract_vs20.vcs fxctmp9_tmp\SDK_eyes_flashlight_vs20.inc shaders\fxc\SDK_eyes_flashlight_vs20.vcs fxctmp9_tmp\SDK_eyes_flashlight_ps20.inc shaders\fxc\SDK_eyes_flashlight_ps20.vcs fxctmp9_tmp\SDK_eyes_flashlight_ps20b.inc shaders\fxc\SDK_eyes_flashlight_ps20b.vcs fxctmp9_tmp\SDK_eyes_ps20.inc shaders\fxc\SDK_eyes_ps20.vcs fxctmp9_tmp\SDK_eyes_ps20b.inc shaders\fxc\SDK_eyes_ps20b.vcs fxctmp9_tmp\SDK_eyes_vs20.inc shaders\fxc\SDK_eyes_vs20.vcs fxctmp9_tmp\SDK_eyeglint_ps20.inc shaders\fxc\SDK_eyeglint_ps20.vcs fxctmp9_tmp\SDK_eyeglint_ps20b.inc shaders\fxc\SDK_eyeglint_ps20b.vcs fxctmp9_tmp\SDK_eyeglint_vs20.inc shaders\fxc\SDK_eyeglint_vs20.vcs fxctmp9_tmp\SDK_teeth_ps20.inc shaders\fxc\SDK_teeth_ps20.vcs fxctmp9_tmp\SDK_teeth_ps20b.inc shaders\fxc\SDK_teeth_ps20b.vcs fxctmp9_tmp\SDK_teeth_vs20.inc shaders\fxc\SDK_teeth_vs20.vcs fxctmp9_tmp\SDK_teeth_bump_ps20.inc shaders\fxc\SDK_teeth_bump_ps20.vcs fxctmp9_tmp\SDK_teeth_bump_ps20b.inc shaders\fxc\SDK_teeth_bump_ps20b.vcs fxctmp9_tmp\SDK_teeth_bump_vs20.inc shaders\fxc\SDK_teeth_bump_vs20.vcs fxctmp9_tmp\SDK_teeth_flashlight_ps20.inc shaders\fxc\SDK_teeth_flashlight_ps20.vcs fxctmp9_tmp\SDK_teeth_flashlight_ps20b.inc shaders\fxc\SDK_teeth_flashlight_ps20b.vcs fxctmp9_tmp\SDK_teeth_flashlight_vs20.inc shaders\fxc\SDK_teeth_flashlight_vs20.vcs fxctmp9_tmp\SDK_sprite_ps20.inc shaders\fxc\SDK_sprite_ps20.vcs fxctmp9_tmp\SDK_sprite_ps20b.inc shaders\fxc\SDK_sprite_ps20b.vcs fxctmp9_tmp\SDK_sprite_vs20.inc shaders\fxc\SDK_sprite_vs20.vcs fxctmp9_tmp\SDK_decalmodulate_ps20.inc shaders\fxc\SDK_decalmodulate_ps20.vcs fxctmp9_tmp\SDK_decalmodulate_ps20b.inc shaders\fxc\SDK_decalmodulate_ps20b.vcs fxctmp9_tmp\SDK_decalmodulate_vs20.inc shaders\fxc\SDK_decalmodulate_vs20.vcs fxctmp9_tmp\SDK_unlittwotexture_ps20.inc shaders\fxc\SDK_unlittwotexture_ps20.vcs fxctmp9_tmp\SDK_unlittwotexture_ps20b.inc shaders\fxc\SDK_unlittwotexture_ps20b.vcs fxctmp9_tmp\SDK_unlittwotexture_vs20.inc shaders\fxc\SDK_unlittwotexture_vs20.vcs fxctmp9_tmp\SDK_monitorscreen_ps20.inc shaders\fxc\SDK_monitorscreen_ps20.vcs fxctmp9_tmp\SDK_monitorscreen_ps20b.inc shaders\fxc\SDK_monitorscreen_ps20b.vcs fxctmp9_tmp\SDK_ShatteredGlass_ps20.inc shaders\fxc\SDK_ShatteredGlass_ps20.vcs fxctmp9_tmp\SDK_ShatteredGlass_ps20b.inc shaders\fxc\SDK_ShatteredGlass_ps20b.vcs fxctmp9_tmp\SDK_ShatteredGlass_vs20.inc shaders\fxc\SDK_ShatteredGlass_vs20.vcs fxctmp9_tmp\SDK_windowimposter_ps20.inc shaders\fxc\SDK_windowimposter_ps20.vcs fxctmp9_tmp\SDK_windowimposter_ps20b.inc shaders\fxc\SDK_windowimposter_ps20b.vcs fxctmp9_tmp\SDK_windowimposter_vs20.inc shaders\fxc\SDK_windowimposter_vs20.vcs fxctmp9_tmp\SDK_engine_post_ps20b.inc shaders\fxc\SDK_engine_post_ps20b.vcs fxctmp9_tmp\depth_of_field_ps20b.inc shaders\fxc\depth_of_field_ps20b.vcs fxctmp9_tmp\depth_of_field_vs20.inc shaders\fxc\depth_of_field_vs20.vcs fxctmp9_tmp\blurgaussian_3x3_ps20.inc shaders\fxc\blurgaussian_3x3_ps20.vcs fxctmp9_tmp\blurgaussian_3x3_ps20b.inc shaders\fxc\blurgaussian_3x3_ps20b.vcs
+
+fxctmp9_tmp\pbr_vs20b.inc shaders\fxc\pbr_vs20b.vcs: pbr_vs20b.fxc common_vs_fxc.h common_hlsl_cpp_consts.h common_pragmas.h common_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." pbr_vs20b.fxc-----pbr_vs20b
+	echo pbr_vs20b.fxc>> filestocopy.txt
+	echo common_vs_fxc.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\pbr_ps20b.inc shaders\fxc\pbr_ps20b.vcs: pbr_ps20b.fxc common_vertexlitgeneric_dx9.h shader_constant_register_map.h pbr_common_ps2_3_x.h common_lightmappedgeneric_fxc.h common_hlsl_cpp_consts.h common_ps_fxc.h common_pragmas.h common_fxc.h common_flashlight_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." pbr_ps20b.fxc-----pbr_ps20b
+	echo pbr_ps20b.fxc>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+	echo shader_constant_register_map.h>> filestocopy.txt
+	echo pbr_common_ps2_3_x.h>> filestocopy.txt
+	echo common_lightmappedgeneric_fxc.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_flashlight_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_skin_ps20b.inc shaders\fxc\SDK_skin_ps20b.vcs: SDK_skin_ps20b.fxc shader_constant_register_map.h common_vertexlitgeneric_dx9.h common_flashlight_fxc.h common_fxc.h common_hlsl_cpp_consts.h common_ps_fxc.h common_pragmas.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_skin_ps20b.fxc-----SDK_skin_ps20b
+	echo SDK_skin_ps20b.fxc>> filestocopy.txt
+	echo shader_constant_register_map.h>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+	echo common_flashlight_fxc.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_skin_vs20.inc shaders\fxc\SDK_skin_vs20.vcs: SDK_skin_vs20.fxc common_vs_fxc.h common_fxc.h common_hlsl_cpp_consts.h common_pragmas.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_skin_vs20.fxc-----SDK_skin_vs20
+	echo SDK_skin_vs20.fxc>> filestocopy.txt
+	echo common_vs_fxc.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_vertexlit_and_unlit_generic_bump_ps20.inc shaders\fxc\SDK_vertexlit_and_unlit_generic_bump_ps20.vcs: SDK_vertexlit_and_unlit_generic_bump_ps2x.fxc common_fxc.h common_flashlight_fxc.h common_vertexlitgeneric_dx9.h common_hlsl_cpp_consts.h common_ps_fxc.h common_pragmas.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_vertexlit_and_unlit_generic_bump_ps2x.fxc-----SDK_vertexlit_and_unlit_generic_bump_ps20
+	echo SDK_vertexlit_and_unlit_generic_bump_ps2x.fxc>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_flashlight_fxc.h>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_vertexlit_and_unlit_generic_bump_ps20b.inc shaders\fxc\SDK_vertexlit_and_unlit_generic_bump_ps20b.vcs: SDK_vertexlit_and_unlit_generic_bump_ps2x.fxc common_fxc.h common_flashlight_fxc.h common_vertexlitgeneric_dx9.h common_hlsl_cpp_consts.h common_ps_fxc.h common_pragmas.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_vertexlit_and_unlit_generic_bump_ps2x.fxc-----SDK_vertexlit_and_unlit_generic_bump_ps20b
+	echo SDK_vertexlit_and_unlit_generic_bump_ps2x.fxc>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_flashlight_fxc.h>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_vertexlit_and_unlit_generic_bump_ps20b.inc shaders\fxc\SDK_vertexlit_and_unlit_generic_bump_ps20b.vcs: SDK_vertexlit_and_unlit_generic_bump_ps20b.fxc common_flashlight_fxc.h common_fxc.h common_pragmas.h common_hlsl_cpp_consts.h common_ps_fxc.h common_vertexlitgeneric_dx9.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_vertexlit_and_unlit_generic_bump_ps20b.fxc-----SDK_vertexlit_and_unlit_generic_bump_ps20b
+	echo SDK_vertexlit_and_unlit_generic_bump_ps20b.fxc>> filestocopy.txt
+	echo common_flashlight_fxc.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_vertexlit_and_unlit_generic_bump_vs20.inc shaders\fxc\SDK_vertexlit_and_unlit_generic_bump_vs20.vcs: SDK_vertexlit_and_unlit_generic_bump_vs20.fxc common_fxc.h common_pragmas.h common_hlsl_cpp_consts.h common_vs_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_vertexlit_and_unlit_generic_bump_vs20.fxc-----SDK_vertexlit_and_unlit_generic_bump_vs20
+	echo SDK_vertexlit_and_unlit_generic_bump_vs20.fxc>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_vs_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_vertexlit_and_unlit_generic_ps20.inc shaders\fxc\SDK_vertexlit_and_unlit_generic_ps20.vcs: SDK_vertexlit_and_unlit_generic_ps2x.fxc common_flashlight_fxc.h common_fxc.h common_hlsl_cpp_consts.h common_pragmas.h common_ps_fxc.h common_vertexlitgeneric_dx9.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_vertexlit_and_unlit_generic_ps2x.fxc-----SDK_vertexlit_and_unlit_generic_ps20
+	echo SDK_vertexlit_and_unlit_generic_ps2x.fxc>> filestocopy.txt
+	echo common_flashlight_fxc.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_vertexlit_and_unlit_generic_ps20b.inc shaders\fxc\SDK_vertexlit_and_unlit_generic_ps20b.vcs: SDK_vertexlit_and_unlit_generic_ps2x.fxc common_flashlight_fxc.h common_fxc.h common_hlsl_cpp_consts.h common_pragmas.h common_ps_fxc.h common_vertexlitgeneric_dx9.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_vertexlit_and_unlit_generic_ps2x.fxc-----SDK_vertexlit_and_unlit_generic_ps20b
+	echo SDK_vertexlit_and_unlit_generic_ps2x.fxc>> filestocopy.txt
+	echo common_flashlight_fxc.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_vertexlit_and_unlit_generic_ps20b.inc shaders\fxc\SDK_vertexlit_and_unlit_generic_ps20b.vcs: SDK_vertexlit_and_unlit_generic_ps20b.fxc common_vertexlitgeneric_dx9.h common_hlsl_cpp_consts.h common_ps_fxc.h common_pragmas.h common_fxc.h common_flashlight_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_vertexlit_and_unlit_generic_ps20b.fxc-----SDK_vertexlit_and_unlit_generic_ps20b
+	echo SDK_vertexlit_and_unlit_generic_ps20b.fxc>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_flashlight_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_vertexlit_and_unlit_generic_vs20.inc shaders\fxc\SDK_vertexlit_and_unlit_generic_vs20.vcs: SDK_vertexlit_and_unlit_generic_vs20.fxc common_pragmas.h common_hlsl_cpp_consts.h common_fxc.h tree_sway.h common_vs_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_vertexlit_and_unlit_generic_vs20.fxc-----SDK_vertexlit_and_unlit_generic_vs20
+	echo SDK_vertexlit_and_unlit_generic_vs20.fxc>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo tree_sway.h>> filestocopy.txt
+	echo common_vs_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_cloak_blended_pass_ps20.inc shaders\fxc\SDK_cloak_blended_pass_ps20.vcs: SDK_cloak_blended_pass_ps2x.fxc common_vertexlitgeneric_dx9.h common_ps_fxc.h common_hlsl_cpp_consts.h common_pragmas.h common_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_cloak_blended_pass_ps2x.fxc-----SDK_cloak_blended_pass_ps20
+	echo SDK_cloak_blended_pass_ps2x.fxc>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_cloak_blended_pass_ps20b.inc shaders\fxc\SDK_cloak_blended_pass_ps20b.vcs: SDK_cloak_blended_pass_ps2x.fxc common_vertexlitgeneric_dx9.h common_ps_fxc.h common_hlsl_cpp_consts.h common_pragmas.h common_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_cloak_blended_pass_ps2x.fxc-----SDK_cloak_blended_pass_ps20b
+	echo SDK_cloak_blended_pass_ps2x.fxc>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_cloak_blended_pass_vs20.inc shaders\fxc\SDK_cloak_blended_pass_vs20.vcs: SDK_cloak_blended_pass_vs20.fxc common_fxc.h common_pragmas.h common_hlsl_cpp_consts.h common_vs_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_cloak_blended_pass_vs20.fxc-----SDK_cloak_blended_pass_vs20
+	echo SDK_cloak_blended_pass_vs20.fxc>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_vs_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_emissive_scroll_blended_pass_ps20.inc shaders\fxc\SDK_emissive_scroll_blended_pass_ps20.vcs: SDK_emissive_scroll_blended_pass_ps2x.fxc common_hlsl_cpp_consts.h common_pragmas.h common_ps_fxc.h common_vertexlitgeneric_dx9.h common_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_emissive_scroll_blended_pass_ps2x.fxc-----SDK_emissive_scroll_blended_pass_ps20
+	echo SDK_emissive_scroll_blended_pass_ps2x.fxc>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_emissive_scroll_blended_pass_ps20b.inc shaders\fxc\SDK_emissive_scroll_blended_pass_ps20b.vcs: SDK_emissive_scroll_blended_pass_ps2x.fxc common_hlsl_cpp_consts.h common_pragmas.h common_ps_fxc.h common_vertexlitgeneric_dx9.h common_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_emissive_scroll_blended_pass_ps2x.fxc-----SDK_emissive_scroll_blended_pass_ps20b
+	echo SDK_emissive_scroll_blended_pass_ps2x.fxc>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_emissive_scroll_blended_pass_vs20.inc shaders\fxc\SDK_emissive_scroll_blended_pass_vs20.vcs: SDK_emissive_scroll_blended_pass_vs20.fxc common_vs_fxc.h common_hlsl_cpp_consts.h common_pragmas.h common_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_emissive_scroll_blended_pass_vs20.fxc-----SDK_emissive_scroll_blended_pass_vs20
+	echo SDK_emissive_scroll_blended_pass_vs20.fxc>> filestocopy.txt
+	echo common_vs_fxc.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_flesh_interior_blended_pass_ps20.inc shaders\fxc\SDK_flesh_interior_blended_pass_ps20.vcs: SDK_flesh_interior_blended_pass_ps2x.fxc common_fxc.h common_hlsl_cpp_consts.h common_pragmas.h common_ps_fxc.h common_vertexlitgeneric_dx9.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_flesh_interior_blended_pass_ps2x.fxc-----SDK_flesh_interior_blended_pass_ps20
+	echo SDK_flesh_interior_blended_pass_ps2x.fxc>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_flesh_interior_blended_pass_ps20b.inc shaders\fxc\SDK_flesh_interior_blended_pass_ps20b.vcs: SDK_flesh_interior_blended_pass_ps2x.fxc common_fxc.h common_hlsl_cpp_consts.h common_pragmas.h common_ps_fxc.h common_vertexlitgeneric_dx9.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_flesh_interior_blended_pass_ps2x.fxc-----SDK_flesh_interior_blended_pass_ps20b
+	echo SDK_flesh_interior_blended_pass_ps2x.fxc>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_flesh_interior_blended_pass_vs20.inc shaders\fxc\SDK_flesh_interior_blended_pass_vs20.vcs: SDK_flesh_interior_blended_pass_vs20.fxc common_hlsl_cpp_consts.h common_pragmas.h common_fxc.h common_vs_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_flesh_interior_blended_pass_vs20.fxc-----SDK_flesh_interior_blended_pass_vs20
+	echo SDK_flesh_interior_blended_pass_vs20.fxc>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_vs_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_flashlight_ps20.inc shaders\fxc\SDK_flashlight_ps20.vcs: SDK_flashlight_ps2x.fxc common_flashlight_fxc.h common_fxc.h common_hlsl_cpp_consts.h common_pragmas.h common_ps_fxc.h common_lightmappedgeneric_fxc.h shader_constant_register_map.h common_vertexlitgeneric_dx9.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_flashlight_ps2x.fxc-----SDK_flashlight_ps20
+	echo SDK_flashlight_ps2x.fxc>> filestocopy.txt
+	echo common_flashlight_fxc.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_lightmappedgeneric_fxc.h>> filestocopy.txt
+	echo shader_constant_register_map.h>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_flashlight_ps20b.inc shaders\fxc\SDK_flashlight_ps20b.vcs: SDK_flashlight_ps2x.fxc common_flashlight_fxc.h common_fxc.h common_hlsl_cpp_consts.h common_pragmas.h common_ps_fxc.h common_lightmappedgeneric_fxc.h shader_constant_register_map.h common_vertexlitgeneric_dx9.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_flashlight_ps2x.fxc-----SDK_flashlight_ps20b
+	echo SDK_flashlight_ps2x.fxc>> filestocopy.txt
+	echo common_flashlight_fxc.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_lightmappedgeneric_fxc.h>> filestocopy.txt
+	echo shader_constant_register_map.h>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_flashlight_ps11.inc shaders\fxc\SDK_flashlight_ps11.vcs: SDK_flashlight_ps11.fxc common_hlsl_cpp_consts.h common_ps_fxc.h common_pragmas.h common_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_flashlight_ps11.fxc-----SDK_flashlight_ps11
+	echo SDK_flashlight_ps11.fxc>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_lightmappedgeneric_decal_ps20.inc shaders\fxc\SDK_lightmappedgeneric_decal_ps20.vcs: SDK_lightmappedgeneric_decal_ps2x.fxc shader_constant_register_map.h common_hlsl_cpp_consts.h common_pragmas.h common_ps_fxc.h common_vertexlitgeneric_dx9.h common_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_lightmappedgeneric_decal_ps2x.fxc-----SDK_lightmappedgeneric_decal_ps20
+	echo SDK_lightmappedgeneric_decal_ps2x.fxc>> filestocopy.txt
+	echo shader_constant_register_map.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_lightmappedgeneric_decal_ps20b.inc shaders\fxc\SDK_lightmappedgeneric_decal_ps20b.vcs: SDK_lightmappedgeneric_decal_ps2x.fxc shader_constant_register_map.h common_hlsl_cpp_consts.h common_pragmas.h common_ps_fxc.h common_vertexlitgeneric_dx9.h common_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_lightmappedgeneric_decal_ps2x.fxc-----SDK_lightmappedgeneric_decal_ps20b
+	echo SDK_lightmappedgeneric_decal_ps2x.fxc>> filestocopy.txt
+	echo shader_constant_register_map.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_lightmappedgeneric_decal_vs20.inc shaders\fxc\SDK_lightmappedgeneric_decal_vs20.vcs: SDK_lightmappedgeneric_decal_vs20.fxc common_vs_fxc.h common_hlsl_cpp_consts.h common_pragmas.h common_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_lightmappedgeneric_decal_vs20.fxc-----SDK_lightmappedgeneric_decal_vs20
+	echo SDK_lightmappedgeneric_decal_vs20.fxc>> filestocopy.txt
+	echo common_vs_fxc.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_lightmappedgeneric_flashlight_vs11.inc shaders\fxc\SDK_lightmappedgeneric_flashlight_vs11.vcs: SDK_lightmappedgeneric_flashlight_vs11.fxc common_fxc.h common_pragmas.h common_hlsl_cpp_consts.h common_vs_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_lightmappedgeneric_flashlight_vs11.fxc-----SDK_lightmappedgeneric_flashlight_vs11
+	echo SDK_lightmappedgeneric_flashlight_vs11.fxc>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_vs_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_lightmappedgeneric_flashlight_vs20.inc shaders\fxc\SDK_lightmappedgeneric_flashlight_vs20.vcs: SDK_lightmappedgeneric_flashlight_vs20.fxc common_vs_fxc.h common_fxc.h common_pragmas.h common_hlsl_cpp_consts.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_lightmappedgeneric_flashlight_vs20.fxc-----SDK_lightmappedgeneric_flashlight_vs20
+	echo SDK_lightmappedgeneric_flashlight_vs20.fxc>> filestocopy.txt
+	echo common_vs_fxc.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_lightmappedgeneric_flashlight_ps20.inc shaders\fxc\SDK_lightmappedgeneric_flashlight_ps20.vcs: SDK_lightmappedgeneric_flashlight_ps2x.fxc common_lightmappedgeneric_fxc.h common_pragmas.h common_hlsl_cpp_consts.h common_ps_fxc.h common_fxc.h common_flashlight_fxc.h common_vertexlitgeneric_dx9.h shader_constant_register_map.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_lightmappedgeneric_flashlight_ps2x.fxc-----SDK_lightmappedgeneric_flashlight_ps20
+	echo SDK_lightmappedgeneric_flashlight_ps2x.fxc>> filestocopy.txt
+	echo common_lightmappedgeneric_fxc.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_flashlight_fxc.h>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+	echo shader_constant_register_map.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_lightmappedgeneric_flashlight_ps20b.inc shaders\fxc\SDK_lightmappedgeneric_flashlight_ps20b.vcs: SDK_lightmappedgeneric_flashlight_ps2x.fxc common_lightmappedgeneric_fxc.h common_pragmas.h common_hlsl_cpp_consts.h common_ps_fxc.h common_fxc.h common_flashlight_fxc.h common_vertexlitgeneric_dx9.h shader_constant_register_map.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_lightmappedgeneric_flashlight_ps2x.fxc-----SDK_lightmappedgeneric_flashlight_ps20b
+	echo SDK_lightmappedgeneric_flashlight_ps2x.fxc>> filestocopy.txt
+	echo common_lightmappedgeneric_fxc.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_flashlight_fxc.h>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+	echo shader_constant_register_map.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_lightmappedgeneric_lightingonly_overbright2_ps11.inc shaders\fxc\SDK_lightmappedgeneric_lightingonly_overbright2_ps11.vcs: SDK_lightmappedgeneric_lightingonly_overbright2_ps11.fxc 
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_lightmappedgeneric_lightingonly_overbright2_ps11.fxc-----SDK_lightmappedgeneric_lightingonly_overbright2_ps11
+	echo SDK_lightmappedgeneric_lightingonly_overbright2_ps11.fxc>> filestocopy.txt
+
+fxctmp9_tmp\SDK_lightmappedgeneric_lightingonly_vs11.inc shaders\fxc\SDK_lightmappedgeneric_lightingonly_vs11.vcs: SDK_lightmappedgeneric_lightingonly_vs11.fxc common_fxc.h common_hlsl_cpp_consts.h common_pragmas.h common_vs_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_lightmappedgeneric_lightingonly_vs11.fxc-----SDK_lightmappedgeneric_lightingonly_vs11
+	echo SDK_lightmappedgeneric_lightingonly_vs11.fxc>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_vs_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_lightmappedgeneric_ps20b.inc shaders\fxc\SDK_lightmappedgeneric_ps20b.vcs: SDK_lightmappedgeneric_ps20b.fxc lightmappedgeneric_ps2_3_x.h common_lightmappedgeneric_fxc.h common_hlsl_cpp_consts.h common_pragmas.h common_ps_fxc.h common_fxc.h common_flashlight_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_lightmappedgeneric_ps20b.fxc-----SDK_lightmappedgeneric_ps20b
+	echo SDK_lightmappedgeneric_ps20b.fxc>> filestocopy.txt
+	echo lightmappedgeneric_ps2_3_x.h>> filestocopy.txt
+	echo common_lightmappedgeneric_fxc.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_flashlight_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_lightmappedgeneric_ps11.inc shaders\fxc\SDK_lightmappedgeneric_ps11.vcs: SDK_lightmappedgeneric_ps11.fxc 
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_lightmappedgeneric_ps11.fxc-----SDK_lightmappedgeneric_ps11
+	echo SDK_lightmappedgeneric_ps11.fxc>> filestocopy.txt
+
+fxctmp9_tmp\SDK_lightmappedgeneric_vs20.inc shaders\fxc\SDK_lightmappedgeneric_vs20.vcs: SDK_lightmappedgeneric_vs20.fxc common_vs_fxc.h common_fxc.h common_hlsl_cpp_consts.h common_pragmas.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_lightmappedgeneric_vs20.fxc-----SDK_lightmappedgeneric_vs20
+	echo SDK_lightmappedgeneric_vs20.fxc>> filestocopy.txt
+	echo common_vs_fxc.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_lightmappedreflective_ps20.inc shaders\fxc\SDK_lightmappedreflective_ps20.vcs: SDK_lightmappedreflective_ps2x.fxc common_hlsl_cpp_consts.h common_ps_fxc.h common_pragmas.h common_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_lightmappedreflective_ps2x.fxc-----SDK_lightmappedreflective_ps20
+	echo SDK_lightmappedreflective_ps2x.fxc>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_lightmappedreflective_ps20b.inc shaders\fxc\SDK_lightmappedreflective_ps20b.vcs: SDK_lightmappedreflective_ps2x.fxc common_hlsl_cpp_consts.h common_ps_fxc.h common_pragmas.h common_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_lightmappedreflective_ps2x.fxc-----SDK_lightmappedreflective_ps20b
+	echo SDK_lightmappedreflective_ps2x.fxc>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_lightmappedreflective_vs20.inc shaders\fxc\SDK_lightmappedreflective_vs20.vcs: SDK_lightmappedreflective_vs20.fxc common_fxc.h common_pragmas.h common_hlsl_cpp_consts.h common_vs_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_lightmappedreflective_vs20.fxc-----SDK_lightmappedreflective_vs20
+	echo SDK_lightmappedreflective_vs20.fxc>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_vs_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_unlitgeneric_ps20.inc shaders\fxc\SDK_unlitgeneric_ps20.vcs: SDK_unlitgeneric_ps2x.fxc common_fxc.h common_hlsl_cpp_consts.h common_pragmas.h common_ps_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_unlitgeneric_ps2x.fxc-----SDK_unlitgeneric_ps20
+	echo SDK_unlitgeneric_ps2x.fxc>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_unlitgeneric_ps20b.inc shaders\fxc\SDK_unlitgeneric_ps20b.vcs: SDK_unlitgeneric_ps2x.fxc common_fxc.h common_hlsl_cpp_consts.h common_pragmas.h common_ps_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_unlitgeneric_ps2x.fxc-----SDK_unlitgeneric_ps20b
+	echo SDK_unlitgeneric_ps2x.fxc>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_unlitgeneric_ps11.inc shaders\fxc\SDK_unlitgeneric_ps11.vcs: SDK_unlitgeneric_ps11.fxc 
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_unlitgeneric_ps11.fxc-----SDK_unlitgeneric_ps11
+	echo SDK_unlitgeneric_ps11.fxc>> filestocopy.txt
+
+fxctmp9_tmp\SDK_unlitgeneric_vs20.inc shaders\fxc\SDK_unlitgeneric_vs20.vcs: SDK_unlitgeneric_vs20.fxc common_fxc.h common_hlsl_cpp_consts.h common_pragmas.h common_vs_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_unlitgeneric_vs20.fxc-----SDK_unlitgeneric_vs20
+	echo SDK_unlitgeneric_vs20.fxc>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_vs_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_vertexlit_lighting_only_ps20.inc shaders\fxc\SDK_vertexlit_lighting_only_ps20.vcs: SDK_vertexlit_lighting_only_ps2x.fxc common_hlsl_cpp_consts.h common_ps_fxc.h common_pragmas.h common_vertexlitgeneric_dx9.h common_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_vertexlit_lighting_only_ps2x.fxc-----SDK_vertexlit_lighting_only_ps20
+	echo SDK_vertexlit_lighting_only_ps2x.fxc>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_vertexlit_lighting_only_ps20b.inc shaders\fxc\SDK_vertexlit_lighting_only_ps20b.vcs: SDK_vertexlit_lighting_only_ps2x.fxc common_hlsl_cpp_consts.h common_ps_fxc.h common_pragmas.h common_vertexlitgeneric_dx9.h common_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_vertexlit_lighting_only_ps2x.fxc-----SDK_vertexlit_lighting_only_ps20b
+	echo SDK_vertexlit_lighting_only_ps2x.fxc>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_vertexlitgeneric_lightingonly_overbright2_ps11.inc shaders\fxc\SDK_vertexlitgeneric_lightingonly_overbright2_ps11.vcs: SDK_vertexlitgeneric_lightingonly_overbright2_ps11.fxc 
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_vertexlitgeneric_lightingonly_overbright2_ps11.fxc-----SDK_vertexlitgeneric_lightingonly_overbright2_ps11
+	echo SDK_vertexlitgeneric_lightingonly_overbright2_ps11.fxc>> filestocopy.txt
+
+fxctmp9_tmp\SDK_worldtwotextureblend_ps20.inc shaders\fxc\SDK_worldtwotextureblend_ps20.vcs: SDK_worldtwotextureblend_ps2x.fxc common_pragmas.h common_hlsl_cpp_consts.h common_ps_fxc.h common_fxc.h common_flashlight_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_worldtwotextureblend_ps2x.fxc-----SDK_worldtwotextureblend_ps20
+	echo SDK_worldtwotextureblend_ps2x.fxc>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_flashlight_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_worldtwotextureblend_ps20b.inc shaders\fxc\SDK_worldtwotextureblend_ps20b.vcs: SDK_worldtwotextureblend_ps2x.fxc common_pragmas.h common_hlsl_cpp_consts.h common_ps_fxc.h common_fxc.h common_flashlight_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_worldtwotextureblend_ps2x.fxc-----SDK_worldtwotextureblend_ps20b
+	echo SDK_worldtwotextureblend_ps2x.fxc>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_flashlight_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_WorldVertexTransition_ps20.inc shaders\fxc\SDK_WorldVertexTransition_ps20.vcs: SDK_WorldVertexTransition_ps2x.fxc common_hlsl_cpp_consts.h common_pragmas.h common_ps_fxc.h common_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_WorldVertexTransition_ps2x.fxc-----SDK_WorldVertexTransition_ps20
+	echo SDK_WorldVertexTransition_ps2x.fxc>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_WorldVertexTransition_ps20b.inc shaders\fxc\SDK_WorldVertexTransition_ps20b.vcs: SDK_WorldVertexTransition_ps2x.fxc common_hlsl_cpp_consts.h common_pragmas.h common_ps_fxc.h common_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_WorldVertexTransition_ps2x.fxc-----SDK_WorldVertexTransition_ps20b
+	echo SDK_WorldVertexTransition_ps2x.fxc>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_WorldVertexTransition_vs20.inc shaders\fxc\SDK_WorldVertexTransition_vs20.vcs: SDK_WorldVertexTransition_vs20.fxc common_pragmas.h common_hlsl_cpp_consts.h common_fxc.h common_vs_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_WorldVertexTransition_vs20.fxc-----SDK_WorldVertexTransition_vs20
+	echo SDK_WorldVertexTransition_vs20.fxc>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_vs_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_refract_ps20.inc shaders\fxc\SDK_refract_ps20.vcs: SDK_refract_ps2x.fxc shader_constant_register_map.h common_pragmas.h common_hlsl_cpp_consts.h common_ps_fxc.h common_vertexlitgeneric_dx9.h common_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_refract_ps2x.fxc-----SDK_refract_ps20
+	echo SDK_refract_ps2x.fxc>> filestocopy.txt
+	echo shader_constant_register_map.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_refract_ps20b.inc shaders\fxc\SDK_refract_ps20b.vcs: SDK_refract_ps2x.fxc shader_constant_register_map.h common_pragmas.h common_hlsl_cpp_consts.h common_ps_fxc.h common_vertexlitgeneric_dx9.h common_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_refract_ps2x.fxc-----SDK_refract_ps20b
+	echo SDK_refract_ps2x.fxc>> filestocopy.txt
+	echo shader_constant_register_map.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_Refract_vs20.inc shaders\fxc\SDK_Refract_vs20.vcs: SDK_Refract_vs20.fxc common_vs_fxc.h common_hlsl_cpp_consts.h common_pragmas.h common_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_Refract_vs20.fxc-----SDK_Refract_vs20
+	echo SDK_Refract_vs20.fxc>> filestocopy.txt
+	echo common_vs_fxc.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_water_ps20.inc shaders\fxc\SDK_water_ps20.vcs: SDK_water_ps2x.fxc common_pragmas.h common_hlsl_cpp_consts.h common_ps_fxc.h common_fxc.h water_ps2x_helper.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_water_ps2x.fxc-----SDK_water_ps20
+	echo SDK_water_ps2x.fxc>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo water_ps2x_helper.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_water_ps20b.inc shaders\fxc\SDK_water_ps20b.vcs: SDK_water_ps2x.fxc common_pragmas.h common_hlsl_cpp_consts.h common_ps_fxc.h common_fxc.h water_ps2x_helper.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_water_ps2x.fxc-----SDK_water_ps20b
+	echo SDK_water_ps2x.fxc>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo water_ps2x_helper.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_Water_vs20.inc shaders\fxc\SDK_Water_vs20.vcs: SDK_Water_vs20.fxc common_vs_fxc.h common_fxc.h common_pragmas.h common_hlsl_cpp_consts.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_Water_vs20.fxc-----SDK_Water_vs20
+	echo SDK_Water_vs20.fxc>> filestocopy.txt
+	echo common_vs_fxc.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_WaterCheap_ps20.inc shaders\fxc\SDK_WaterCheap_ps20.vcs: SDK_WaterCheap_ps2x.fxc common_fxc.h common_hlsl_cpp_consts.h common_pragmas.h common_ps_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_WaterCheap_ps2x.fxc-----SDK_WaterCheap_ps20
+	echo SDK_WaterCheap_ps2x.fxc>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_WaterCheap_ps20b.inc shaders\fxc\SDK_WaterCheap_ps20b.vcs: SDK_WaterCheap_ps2x.fxc common_fxc.h common_hlsl_cpp_consts.h common_pragmas.h common_ps_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_WaterCheap_ps2x.fxc-----SDK_WaterCheap_ps20b
+	echo SDK_WaterCheap_ps2x.fxc>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_WaterCheap_vs20.inc shaders\fxc\SDK_WaterCheap_vs20.vcs: SDK_WaterCheap_vs20.fxc common_fxc.h common_pragmas.h common_hlsl_cpp_consts.h common_vs_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_WaterCheap_vs20.fxc-----SDK_WaterCheap_vs20
+	echo SDK_WaterCheap_vs20.fxc>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_vs_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_depthwrite_ps20.inc shaders\fxc\SDK_depthwrite_ps20.vcs: SDK_depthwrite_ps2x.fxc 
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_depthwrite_ps2x.fxc-----SDK_depthwrite_ps20
+	echo SDK_depthwrite_ps2x.fxc>> filestocopy.txt
+
+fxctmp9_tmp\SDK_depthwrite_ps20b.inc shaders\fxc\SDK_depthwrite_ps20b.vcs: SDK_depthwrite_ps2x.fxc 
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_depthwrite_ps2x.fxc-----SDK_depthwrite_ps20b
+	echo SDK_depthwrite_ps2x.fxc>> filestocopy.txt
+
+fxctmp9_tmp\SDK_depthwrite_vs20.inc shaders\fxc\SDK_depthwrite_vs20.vcs: SDK_depthwrite_vs20.fxc common_fxc.h common_hlsl_cpp_consts.h common_pragmas.h common_vs_fxc.h tree_sway.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_depthwrite_vs20.fxc-----SDK_depthwrite_vs20
+	echo SDK_depthwrite_vs20.fxc>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_vs_fxc.h>> filestocopy.txt
+	echo tree_sway.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_splinerope_ps20.inc shaders\fxc\SDK_splinerope_ps20.vcs: SDK_splinerope_ps2x.fxc common_hlsl_cpp_consts.h common_pragmas.h common_ps_fxc.h common_fxc.h common_splinerope_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_splinerope_ps2x.fxc-----SDK_splinerope_ps20
+	echo SDK_splinerope_ps2x.fxc>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_splinerope_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_splinerope_ps20b.inc shaders\fxc\SDK_splinerope_ps20b.vcs: SDK_splinerope_ps2x.fxc common_hlsl_cpp_consts.h common_pragmas.h common_ps_fxc.h common_fxc.h common_splinerope_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_splinerope_ps2x.fxc-----SDK_splinerope_ps20b
+	echo SDK_splinerope_ps2x.fxc>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_splinerope_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_splinerope_vs20.inc shaders\fxc\SDK_splinerope_vs20.vcs: SDK_splinerope_vs20.fxc common_splinerope_fxc.h common_vs_fxc.h spline_fxc.h common_pragmas.h common_hlsl_cpp_consts.h common_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_splinerope_vs20.fxc-----SDK_splinerope_vs20
+	echo SDK_splinerope_vs20.fxc>> filestocopy.txt
+	echo common_splinerope_fxc.h>> filestocopy.txt
+	echo common_vs_fxc.h>> filestocopy.txt
+	echo spline_fxc.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_eye_refract_ps20.inc shaders\fxc\SDK_eye_refract_ps20.vcs: SDK_eye_refract_ps2x.fxc shader_constant_register_map.h common_vertexlitgeneric_dx9.h common_pragmas.h common_hlsl_cpp_consts.h common_ps_fxc.h common_flashlight_fxc.h common_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_eye_refract_ps2x.fxc-----SDK_eye_refract_ps20
+	echo SDK_eye_refract_ps2x.fxc>> filestocopy.txt
+	echo shader_constant_register_map.h>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_flashlight_fxc.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_eye_refract_ps20b.inc shaders\fxc\SDK_eye_refract_ps20b.vcs: SDK_eye_refract_ps2x.fxc shader_constant_register_map.h common_vertexlitgeneric_dx9.h common_pragmas.h common_hlsl_cpp_consts.h common_ps_fxc.h common_flashlight_fxc.h common_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_eye_refract_ps2x.fxc-----SDK_eye_refract_ps20b
+	echo SDK_eye_refract_ps2x.fxc>> filestocopy.txt
+	echo shader_constant_register_map.h>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_flashlight_fxc.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_eye_refract_vs20.inc shaders\fxc\SDK_eye_refract_vs20.vcs: SDK_eye_refract_vs20.fxc vortwarp_vs20_helper.h common_hlsl_cpp_consts.h common_pragmas.h common_fxc.h common_vs_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_eye_refract_vs20.fxc-----SDK_eye_refract_vs20
+	echo SDK_eye_refract_vs20.fxc>> filestocopy.txt
+	echo vortwarp_vs20_helper.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_vs_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_eyes_flashlight_vs20.inc shaders\fxc\SDK_eyes_flashlight_vs20.vcs: SDK_eyes_flashlight_vs20.fxc common_fxc.h common_hlsl_cpp_consts.h common_pragmas.h common_vs_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_eyes_flashlight_vs20.fxc-----SDK_eyes_flashlight_vs20
+	echo SDK_eyes_flashlight_vs20.fxc>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_vs_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_eyes_flashlight_ps20.inc shaders\fxc\SDK_eyes_flashlight_ps20.vcs: SDK_eyes_flashlight_ps2x.fxc eyes_flashlight_inc.fxc shader_constant_register_map.h common_vertexlitgeneric_dx9.h common_ps_fxc.h common_hlsl_cpp_consts.h common_pragmas.h common_flashlight_fxc.h common_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_eyes_flashlight_ps2x.fxc-----SDK_eyes_flashlight_ps20
+	echo SDK_eyes_flashlight_ps2x.fxc>> filestocopy.txt
+	echo eyes_flashlight_inc.fxc>> filestocopy.txt
+	echo shader_constant_register_map.h>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_flashlight_fxc.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_eyes_flashlight_ps20b.inc shaders\fxc\SDK_eyes_flashlight_ps20b.vcs: SDK_eyes_flashlight_ps2x.fxc eyes_flashlight_inc.fxc shader_constant_register_map.h common_vertexlitgeneric_dx9.h common_ps_fxc.h common_hlsl_cpp_consts.h common_pragmas.h common_flashlight_fxc.h common_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_eyes_flashlight_ps2x.fxc-----SDK_eyes_flashlight_ps20b
+	echo SDK_eyes_flashlight_ps2x.fxc>> filestocopy.txt
+	echo eyes_flashlight_inc.fxc>> filestocopy.txt
+	echo shader_constant_register_map.h>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_flashlight_fxc.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_eyes_ps20.inc shaders\fxc\SDK_eyes_ps20.vcs: SDK_eyes_ps2x.fxc common_fxc.h common_vertexlitgeneric_dx9.h shader_constant_register_map.h common_hlsl_cpp_consts.h common_pragmas.h common_ps_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_eyes_ps2x.fxc-----SDK_eyes_ps20
+	echo SDK_eyes_ps2x.fxc>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+	echo shader_constant_register_map.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_eyes_ps20b.inc shaders\fxc\SDK_eyes_ps20b.vcs: SDK_eyes_ps2x.fxc common_fxc.h common_vertexlitgeneric_dx9.h shader_constant_register_map.h common_hlsl_cpp_consts.h common_pragmas.h common_ps_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_eyes_ps2x.fxc-----SDK_eyes_ps20b
+	echo SDK_eyes_ps2x.fxc>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+	echo shader_constant_register_map.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_eyes_vs20.inc shaders\fxc\SDK_eyes_vs20.vcs: SDK_eyes_vs20.fxc common_vs_fxc.h common_fxc.h vortwarp_vs20_helper.h common_hlsl_cpp_consts.h common_pragmas.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_eyes_vs20.fxc-----SDK_eyes_vs20
+	echo SDK_eyes_vs20.fxc>> filestocopy.txt
+	echo common_vs_fxc.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo vortwarp_vs20_helper.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_eyeglint_ps20.inc shaders\fxc\SDK_eyeglint_ps20.vcs: SDK_eyeglint_ps2x.fxc 
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_eyeglint_ps2x.fxc-----SDK_eyeglint_ps20
+	echo SDK_eyeglint_ps2x.fxc>> filestocopy.txt
+
+fxctmp9_tmp\SDK_eyeglint_ps20b.inc shaders\fxc\SDK_eyeglint_ps20b.vcs: SDK_eyeglint_ps2x.fxc 
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_eyeglint_ps2x.fxc-----SDK_eyeglint_ps20b
+	echo SDK_eyeglint_ps2x.fxc>> filestocopy.txt
+
+fxctmp9_tmp\SDK_eyeglint_vs20.inc shaders\fxc\SDK_eyeglint_vs20.vcs: SDK_eyeglint_vs20.fxc common_fxc.h common_pragmas.h common_hlsl_cpp_consts.h common_vs_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_eyeglint_vs20.fxc-----SDK_eyeglint_vs20
+	echo SDK_eyeglint_vs20.fxc>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_vs_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_teeth_ps20.inc shaders\fxc\SDK_teeth_ps20.vcs: SDK_teeth_ps2x.fxc common_vertexlitgeneric_dx9.h shader_constant_register_map.h common_hlsl_cpp_consts.h common_pragmas.h common_ps_fxc.h common_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_teeth_ps2x.fxc-----SDK_teeth_ps20
+	echo SDK_teeth_ps2x.fxc>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+	echo shader_constant_register_map.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_teeth_ps20b.inc shaders\fxc\SDK_teeth_ps20b.vcs: SDK_teeth_ps2x.fxc common_vertexlitgeneric_dx9.h shader_constant_register_map.h common_hlsl_cpp_consts.h common_pragmas.h common_ps_fxc.h common_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_teeth_ps2x.fxc-----SDK_teeth_ps20b
+	echo SDK_teeth_ps2x.fxc>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+	echo shader_constant_register_map.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_teeth_vs20.inc shaders\fxc\SDK_teeth_vs20.vcs: SDK_teeth_vs20.fxc common_vs_fxc.h common_fxc.h common_hlsl_cpp_consts.h vortwarp_vs20_helper.h common_pragmas.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_teeth_vs20.fxc-----SDK_teeth_vs20
+	echo SDK_teeth_vs20.fxc>> filestocopy.txt
+	echo common_vs_fxc.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo vortwarp_vs20_helper.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_teeth_bump_ps20.inc shaders\fxc\SDK_teeth_bump_ps20.vcs: SDK_teeth_bump_ps2x.fxc shader_constant_register_map.h common_vertexlitgeneric_dx9.h common_ps_fxc.h common_hlsl_cpp_consts.h common_pragmas.h common_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_teeth_bump_ps2x.fxc-----SDK_teeth_bump_ps20
+	echo SDK_teeth_bump_ps2x.fxc>> filestocopy.txt
+	echo shader_constant_register_map.h>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_teeth_bump_ps20b.inc shaders\fxc\SDK_teeth_bump_ps20b.vcs: SDK_teeth_bump_ps2x.fxc shader_constant_register_map.h common_vertexlitgeneric_dx9.h common_ps_fxc.h common_hlsl_cpp_consts.h common_pragmas.h common_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_teeth_bump_ps2x.fxc-----SDK_teeth_bump_ps20b
+	echo SDK_teeth_bump_ps2x.fxc>> filestocopy.txt
+	echo shader_constant_register_map.h>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_teeth_bump_vs20.inc shaders\fxc\SDK_teeth_bump_vs20.vcs: SDK_teeth_bump_vs20.fxc common_vs_fxc.h common_fxc.h common_pragmas.h common_hlsl_cpp_consts.h vortwarp_vs20_helper.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_teeth_bump_vs20.fxc-----SDK_teeth_bump_vs20
+	echo SDK_teeth_bump_vs20.fxc>> filestocopy.txt
+	echo common_vs_fxc.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo vortwarp_vs20_helper.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_teeth_flashlight_ps20.inc shaders\fxc\SDK_teeth_flashlight_ps20.vcs: SDK_teeth_flashlight_ps2x.fxc common_vertexlitgeneric_dx9.h shader_constant_register_map.h common_pragmas.h common_hlsl_cpp_consts.h common_ps_fxc.h common_fxc.h common_flashlight_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_teeth_flashlight_ps2x.fxc-----SDK_teeth_flashlight_ps20
+	echo SDK_teeth_flashlight_ps2x.fxc>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+	echo shader_constant_register_map.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_flashlight_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_teeth_flashlight_ps20b.inc shaders\fxc\SDK_teeth_flashlight_ps20b.vcs: SDK_teeth_flashlight_ps2x.fxc common_vertexlitgeneric_dx9.h shader_constant_register_map.h common_pragmas.h common_hlsl_cpp_consts.h common_ps_fxc.h common_fxc.h common_flashlight_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_teeth_flashlight_ps2x.fxc-----SDK_teeth_flashlight_ps20b
+	echo SDK_teeth_flashlight_ps2x.fxc>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+	echo shader_constant_register_map.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_flashlight_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_teeth_flashlight_vs20.inc shaders\fxc\SDK_teeth_flashlight_vs20.vcs: SDK_teeth_flashlight_vs20.fxc common_vs_fxc.h common_fxc.h common_hlsl_cpp_consts.h vortwarp_vs20_helper.h common_pragmas.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_teeth_flashlight_vs20.fxc-----SDK_teeth_flashlight_vs20
+	echo SDK_teeth_flashlight_vs20.fxc>> filestocopy.txt
+	echo common_vs_fxc.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo vortwarp_vs20_helper.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_sprite_ps20.inc shaders\fxc\SDK_sprite_ps20.vcs: SDK_sprite_ps2x.fxc common_fxc.h common_vertexlitgeneric_dx9.h common_hlsl_cpp_consts.h shader_constant_register_map.h common_ps_fxc.h common_pragmas.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_sprite_ps2x.fxc-----SDK_sprite_ps20
+	echo SDK_sprite_ps2x.fxc>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo shader_constant_register_map.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_sprite_ps20b.inc shaders\fxc\SDK_sprite_ps20b.vcs: SDK_sprite_ps2x.fxc common_fxc.h common_vertexlitgeneric_dx9.h common_hlsl_cpp_consts.h shader_constant_register_map.h common_ps_fxc.h common_pragmas.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_sprite_ps2x.fxc-----SDK_sprite_ps20b
+	echo SDK_sprite_ps2x.fxc>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo shader_constant_register_map.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_sprite_vs20.inc shaders\fxc\SDK_sprite_vs20.vcs: SDK_sprite_vs20.fxc common_vs_fxc.h common_fxc.h common_hlsl_cpp_consts.h common_pragmas.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_sprite_vs20.fxc-----SDK_sprite_vs20
+	echo SDK_sprite_vs20.fxc>> filestocopy.txt
+	echo common_vs_fxc.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_decalmodulate_ps20.inc shaders\fxc\SDK_decalmodulate_ps20.vcs: SDK_decalmodulate_ps2x.fxc common_pragmas.h common_hlsl_cpp_consts.h common_ps_fxc.h common_flashlight_fxc.h common_fxc.h shader_constant_register_map.h common_vertexlitgeneric_dx9.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_decalmodulate_ps2x.fxc-----SDK_decalmodulate_ps20
+	echo SDK_decalmodulate_ps2x.fxc>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_flashlight_fxc.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo shader_constant_register_map.h>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_decalmodulate_ps20b.inc shaders\fxc\SDK_decalmodulate_ps20b.vcs: SDK_decalmodulate_ps2x.fxc common_pragmas.h common_hlsl_cpp_consts.h common_ps_fxc.h common_flashlight_fxc.h common_fxc.h shader_constant_register_map.h common_vertexlitgeneric_dx9.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_decalmodulate_ps2x.fxc-----SDK_decalmodulate_ps20b
+	echo SDK_decalmodulate_ps2x.fxc>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_flashlight_fxc.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo shader_constant_register_map.h>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_decalmodulate_vs20.inc shaders\fxc\SDK_decalmodulate_vs20.vcs: SDK_decalmodulate_vs20.fxc common_fxc.h common_hlsl_cpp_consts.h common_pragmas.h common_vs_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_decalmodulate_vs20.fxc-----SDK_decalmodulate_vs20
+	echo SDK_decalmodulate_vs20.fxc>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_vs_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_unlittwotexture_ps20.inc shaders\fxc\SDK_unlittwotexture_ps20.vcs: SDK_unlittwotexture_ps2x.fxc common_vertexlitgeneric_dx9.h shader_constant_register_map.h common_pragmas.h common_hlsl_cpp_consts.h common_ps_fxc.h common_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_unlittwotexture_ps2x.fxc-----SDK_unlittwotexture_ps20
+	echo SDK_unlittwotexture_ps2x.fxc>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+	echo shader_constant_register_map.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_unlittwotexture_ps20b.inc shaders\fxc\SDK_unlittwotexture_ps20b.vcs: SDK_unlittwotexture_ps2x.fxc common_vertexlitgeneric_dx9.h shader_constant_register_map.h common_pragmas.h common_hlsl_cpp_consts.h common_ps_fxc.h common_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_unlittwotexture_ps2x.fxc-----SDK_unlittwotexture_ps20b
+	echo SDK_unlittwotexture_ps2x.fxc>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+	echo shader_constant_register_map.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_unlittwotexture_vs20.inc shaders\fxc\SDK_unlittwotexture_vs20.vcs: SDK_unlittwotexture_vs20.fxc common_pragmas.h common_hlsl_cpp_consts.h common_fxc.h common_vs_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_unlittwotexture_vs20.fxc-----SDK_unlittwotexture_vs20
+	echo SDK_unlittwotexture_vs20.fxc>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_vs_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_monitorscreen_ps20.inc shaders\fxc\SDK_monitorscreen_ps20.vcs: SDK_monitorscreen_ps2x.fxc common_fxc.h common_pragmas.h common_hlsl_cpp_consts.h common_ps_fxc.h common_vertexlitgeneric_dx9.h shader_constant_register_map.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_monitorscreen_ps2x.fxc-----SDK_monitorscreen_ps20
+	echo SDK_monitorscreen_ps2x.fxc>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+	echo shader_constant_register_map.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_monitorscreen_ps20b.inc shaders\fxc\SDK_monitorscreen_ps20b.vcs: SDK_monitorscreen_ps2x.fxc common_fxc.h common_pragmas.h common_hlsl_cpp_consts.h common_ps_fxc.h common_vertexlitgeneric_dx9.h shader_constant_register_map.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_monitorscreen_ps2x.fxc-----SDK_monitorscreen_ps20b
+	echo SDK_monitorscreen_ps2x.fxc>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+	echo shader_constant_register_map.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_ShatteredGlass_ps20.inc shaders\fxc\SDK_ShatteredGlass_ps20.vcs: SDK_ShatteredGlass_ps2x.fxc common_fxc.h common_lightmappedgeneric_fxc.h common_hlsl_cpp_consts.h common_ps_fxc.h common_pragmas.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_ShatteredGlass_ps2x.fxc-----SDK_ShatteredGlass_ps20
+	echo SDK_ShatteredGlass_ps2x.fxc>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_lightmappedgeneric_fxc.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_ShatteredGlass_ps20b.inc shaders\fxc\SDK_ShatteredGlass_ps20b.vcs: SDK_ShatteredGlass_ps2x.fxc common_fxc.h common_lightmappedgeneric_fxc.h common_hlsl_cpp_consts.h common_ps_fxc.h common_pragmas.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_ShatteredGlass_ps2x.fxc-----SDK_ShatteredGlass_ps20b
+	echo SDK_ShatteredGlass_ps2x.fxc>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_lightmappedgeneric_fxc.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_ShatteredGlass_vs20.inc shaders\fxc\SDK_ShatteredGlass_vs20.vcs: SDK_ShatteredGlass_vs20.fxc common_pragmas.h common_hlsl_cpp_consts.h common_fxc.h common_vs_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_ShatteredGlass_vs20.fxc-----SDK_ShatteredGlass_vs20
+	echo SDK_ShatteredGlass_vs20.fxc>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_vs_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_windowimposter_ps20.inc shaders\fxc\SDK_windowimposter_ps20.vcs: SDK_windowimposter_ps2x.fxc common_fxc.h common_vertexlitgeneric_dx9.h common_hlsl_cpp_consts.h shader_constant_register_map.h common_ps_fxc.h common_pragmas.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_windowimposter_ps2x.fxc-----SDK_windowimposter_ps20
+	echo SDK_windowimposter_ps2x.fxc>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo shader_constant_register_map.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_windowimposter_ps20b.inc shaders\fxc\SDK_windowimposter_ps20b.vcs: SDK_windowimposter_ps2x.fxc common_fxc.h common_vertexlitgeneric_dx9.h common_hlsl_cpp_consts.h shader_constant_register_map.h common_ps_fxc.h common_pragmas.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_windowimposter_ps2x.fxc-----SDK_windowimposter_ps20b
+	echo SDK_windowimposter_ps2x.fxc>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_vertexlitgeneric_dx9.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo shader_constant_register_map.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_windowimposter_vs20.inc shaders\fxc\SDK_windowimposter_vs20.vcs: SDK_windowimposter_vs20.fxc common_fxc.h common_pragmas.h common_hlsl_cpp_consts.h common_vs_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_windowimposter_vs20.fxc-----SDK_windowimposter_vs20
+	echo SDK_windowimposter_vs20.fxc>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_vs_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\SDK_engine_post_ps20b.inc shaders\fxc\SDK_engine_post_ps20b.vcs: SDK_engine_post_ps20b.fxc common_fxc.h common_hlsl_cpp_consts.h common_pragmas.h common_ps_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." SDK_engine_post_ps20b.fxc-----SDK_engine_post_ps20b
+	echo SDK_engine_post_ps20b.fxc>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\depth_of_field_ps20b.inc shaders\fxc\depth_of_field_ps20b.vcs: depth_of_field_ps20b.fxc common_fxc.h common_ps_fxc.h common_hlsl_cpp_consts.h common_pragmas.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." depth_of_field_ps20b.fxc-----depth_of_field_ps20b
+	echo depth_of_field_ps20b.fxc>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_ps_fxc.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+
+fxctmp9_tmp\depth_of_field_vs20.inc shaders\fxc\depth_of_field_vs20.vcs: depth_of_field_vs20.fxc common_pragmas.h common_hlsl_cpp_consts.h common_fxc.h common_vs_fxc.h
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." depth_of_field_vs20.fxc-----depth_of_field_vs20
+	echo depth_of_field_vs20.fxc>> filestocopy.txt
+	echo common_pragmas.h>> filestocopy.txt
+	echo common_hlsl_cpp_consts.h>> filestocopy.txt
+	echo common_fxc.h>> filestocopy.txt
+	echo common_vs_fxc.h>> filestocopy.txt
+
+fxctmp9_tmp\blurgaussian_3x3_ps20.inc shaders\fxc\blurgaussian_3x3_ps20.vcs: blurgaussian_3x3_ps2x.fxc 
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." blurgaussian_3x3_ps2x.fxc-----blurgaussian_3x3_ps20
+	echo blurgaussian_3x3_ps2x.fxc>> filestocopy.txt
+
+fxctmp9_tmp\blurgaussian_3x3_ps20b.inc shaders\fxc\blurgaussian_3x3_ps20b.vcs: blurgaussian_3x3_ps2x.fxc 
+	perl ..\..\devtools\bin\fxc_prep.pl   -source "..\.." blurgaussian_3x3_ps2x.fxc-----blurgaussian_3x3_ps20b
+	echo blurgaussian_3x3_ps2x.fxc>> filestocopy.txt
+
