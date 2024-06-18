@@ -1,0 +1,55 @@
+past everything here into your source code directory (ex: source-2013/sp/src/...)
+
+then after that move to 'vpc_scripts/projects.vgc' and just past the next code above ( $Project "captioncompiler" )
+
+// -------------------[ the code ]----------------
+$Project "appframework"
+{
+	"appframework\appframework.vpc" [$WIN32]
+}
+
+$Project "launcher"
+{
+	"launcher\launcher.vpc" [$WIN32]
+}
+
+$Project "launcher_main"
+{
+	"launcher_main\launcher_main.vpc" [$WIN32]
+}
+// -----------------------------------------------
+
+then after that move to 'vpc_scripts/groups.vgc' and just past the next code above ( $Group "gamedlls" )
+
+// -------------------[ the code ]----------------
+$Group "application"
+{
+	"appframework"
+	"launcher"
+	"launcher_main"
+}
+// -----------------------------------------------
+
+then just inside :
+
+$Group "everything"
+{
+	...
+}
+
+paste :
+
+	"appframework"
+	"launcher"
+	"launcher_main"
+	
+to be like this : 
+
+$Group "everything"
+{
+	"appframework"
+	"launcher"
+	"launcher_main"
+	
+	...
+}

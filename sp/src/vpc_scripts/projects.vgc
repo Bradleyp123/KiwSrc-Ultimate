@@ -7,6 +7,20 @@
 /////////////////////////
 // Project definitions //
 /////////////////////////
+$Project "appframework"
+{
+	"appframework\appframework.vpc" [$WIN32]
+}
+
+$Project "launcher"
+{
+	"launcher\launcher.vpc" [$WIN32]
+}
+
+$Project "launcher_main"
+{
+	"launcher_main\launcher_main.vpc" [$WIN32]
+}
 
 $Project "captioncompiler"
 {
