@@ -107,7 +107,7 @@ float		coring = 0.5;	// Light threshold to force to blackness(minimizes lightmap
 qboolean	texscale = true;
 int			dlight_map = 0; // Setting to 1 forces direct lighting into different lightmap than radiosity
 
-float		luxeldensity = 0.5; //was 1.0, updated to 0.5 in Kiwisrc
+float		luxeldensity = 10; //was 1.0, updated to 2 in Kiwisrc
 unsigned	num_degenerate_faces;
 
 qboolean	g_bLowPriority = false;
@@ -497,30 +497,28 @@ void ProcessSkyCameras()
 MakePatchForFace
 =============
 */
-float	totalarea;
-void MakePatchForFace (int fn, winding_t *w)
+float totalarea;
+
+void MakePatchForFace(int fn, winding_t *w)
 {
-	dface_t     *f = g_pFaces + fn;
-	float	    area;
-	CPatch		*patch;
-	Vector		centroid(0,0,0);
-	int			i, j;
-	texinfo_t	*tx;
+	dface_t *f = g_pFaces + fn;
+	float area;
+	CPatch *patch;
+	Vector centroid(0, 0, 0);
+	int i, j;
+	texinfo_t *tx;
 
-    // get texture info
-    tx = &texinfo[f->texinfo];
+	// Get texture info
+	tx = &texinfo[f->texinfo];
 
-	// No patches at all for fog!
 #ifdef STATIC_FOG
-	if ( IsFog( f ) )
+	// No patches at all for fog!
+	if (IsFog(f))
 		return;
 #endif
 
-	// the sky needs patches or the form factors don't work out correctly
-	// if (IsSky( f ) )
-	// 	return;
-
-	area = WindingArea (w);
+	// Compute area of the winding
+	area = WindingArea(w);
 	if (area <= 0)
 	{
 		num_degenerate_faces++;
@@ -530,151 +528,118 @@ void MakePatchForFace (int fn, winding_t *w)
 
 	totalarea += area;
 
-	// get a patch
+	// Create a new patch
 	int ndxPatch = g_Patches.AddToTail();
 	patch = &g_Patches[ndxPatch];
-	memset( patch, 0, sizeof( CPatch ) );
+	memset(patch, 0, sizeof(CPatch));
 	patch->ndxNext = g_Patches.InvalidIndex();
 	patch->ndxNextParent = g_Patches.InvalidIndex();
 	patch->ndxNextClusterChild = g_Patches.InvalidIndex();
 	patch->child1 = g_Patches.InvalidIndex();
 	patch->child2 = g_Patches.InvalidIndex();
 	patch->parent = g_Patches.InvalidIndex();
-	patch->needsBumpmap = tx->flags & SURF_BUMPLIGHT ? true : false;
+	patch->needsBumpmap = (tx->flags & SURF_BUMPLIGHT) ? true : false;
 
-	// link and save patch data
-	patch->ndxNext = g_FacePatches.Element( fn );
+	// Link and save patch data
+	patch->ndxNext = g_FacePatches.Element(fn);
 	g_FacePatches[fn] = ndxPatch;
-//	patch->next = face_g_Patches[fn];
-//	face_g_Patches[fn] = patch;
 
-	// compute a separate scale for chop - since the patch "scale" is the texture scale
-	// we want textures with higher resolution lighting to be chopped up more
+	// Compute scales for texture and lightmap
 	float chopscale[2];
 	chopscale[0] = chopscale[1] = 16.0f;
-    if ( texscale )
-    {
-        // Compute the texture "scale" in s,t
-        for( i=0; i<2; i++ )
-        {
-            patch->scale[i] = 0.0f;
+	if (texscale)
+	{
+		for (i = 0; i < 2; i++)
+		{
+			patch->scale[i] = 0.0f;
 			chopscale[i] = 0.0f;
-            for( j=0; j<3; j++ )
+			for (j = 0; j < 3; j++)
 			{
-                patch->scale[i] += 
-					tx->textureVecsTexelsPerWorldUnits[i][j] * 
-					tx->textureVecsTexelsPerWorldUnits[i][j];
-                chopscale[i] += 
-					tx->lightmapVecsLuxelsPerWorldUnits[i][j] * 
-					tx->lightmapVecsLuxelsPerWorldUnits[i][j];
+				patch->scale[i] += tx->textureVecsTexelsPerWorldUnits[i][j] * tx->textureVecsTexelsPerWorldUnits[i][j];
+				chopscale[i] += tx->lightmapVecsLuxelsPerWorldUnits[i][j] * tx->lightmapVecsLuxelsPerWorldUnits[i][j];
 			}
-            patch->scale[i] = sqrt( patch->scale[i] );
-			chopscale[i] = sqrt( chopscale[i] );
-        }
+			patch->scale[i] = sqrt(patch->scale[i]);
+			chopscale[i] = sqrt(chopscale[i]);
+		}
 	}
-    else
+	else
 	{
 		patch->scale[0] = patch->scale[1] = 1.0f;
 	}
 
 	patch->area = area;
- 
-	patch->sky = IsSky( f );
 
-	// chop scaled up lightmaps coarser
-	patch->luxscale = ((chopscale[0]+chopscale[1])/2);
+	patch->sky = IsSky(f);
+
+	// Set luxscale and chop
+	patch->luxscale = (chopscale[0] + chopscale[1]) / 2;
 	patch->chop = maxchop;
 
-
 #ifdef STATIC_FOG
-    patch->fog = FALSE;
+	patch->fog = FALSE;
 #endif
 
 	patch->winding = w;
 
 	patch->plane = &dplanes[f->planenum];
 
-	// make a new plane to adjust for origined bmodels
-	if (face_offset[fn][0] || face_offset[fn][1] || face_offset[fn][2] )
-	{	
-		dplane_t	*pl;
+	// Adjust plane for origin offset faces
+	if (face_offset[fn][0] || face_offset[fn][1] || face_offset[fn][2])
+	{
+		dplane_t *pl;
 
-		// origin offset faces must create new planes
 		if (numplanes + fakeplanes >= MAX_MAP_PLANES)
 		{
-			Error ("numplanes + fakeplanes >= MAX_MAP_PLANES");
+			Error("numplanes + fakeplanes >= MAX_MAP_PLANES");
 		}
 		pl = &dplanes[numplanes + fakeplanes];
 		fakeplanes++;
 
 		*pl = *(patch->plane);
-		pl->dist += DotProduct (face_offset[fn], pl->normal);
+		pl->dist += DotProduct(face_offset[fn], pl->normal);
 		patch->plane = pl;
 	}
 
 	patch->faceNumber = fn;
-	WindingCenter (w, patch->origin);
+	WindingCenter(w, patch->origin);
 
-	// Save "center" for generating the face normals later.
-	VectorSubtract( patch->origin, face_offset[fn], face_centroids[fn] ); 
+	// Save "center" for generating the face normals later
+	VectorSubtract(patch->origin, face_offset[fn], face_centroids[fn]);
 
-	VectorCopy( patch->plane->normal, patch->normal );
+	VectorCopy(patch->plane->normal, patch->normal);
 
-	WindingBounds (w, patch->face_mins, patch->face_maxs);
-	VectorCopy( patch->face_mins, patch->mins );
-	VectorCopy( patch->face_maxs, patch->maxs );
+	WindingBounds(w, patch->face_mins, patch->face_maxs);
+	VectorCopy(patch->face_mins, patch->mins);
+	VectorCopy(patch->face_maxs, patch->maxs);
 
-	BaseLightForFace( f, patch->baselight, &patch->basearea, patch->reflectivity );
+	BaseLightForFace(f, patch->baselight, &patch->basearea, patch->reflectivity);
 
-	// Chop all texlights very fine.
-	if ( !VectorCompare( patch->baselight, vec3_origin ) )
+	// Chop all texlights very fine
+	if (!VectorCompare(patch->baselight, vec3_origin))
 	{
-		// patch->chop = do_extra ? maxchop / 2 : maxchop;
 		tx->flags |= SURF_LIGHT;
 	}
 
-	// get rid of do extra functionality on displacement surfaces
-	if( ValidDispFace( f ) )
+	// Adjust chop for displacement surfaces
+	if (ValidDispFace(f))
 	{
 		patch->chop = maxchop;
 	}
-
-	// FIXME: If we wanted to add a dependency from vrad to the material system,
-	// we could do this. It would add a bunch of file accesses, though:
-
-	/*
-	// Check for a material var which would override the patch chop
-	bool bFound;
-	const char *pMaterialName = TexDataStringTable_GetString( dtexdata[ tx->texdata ].nameStringTableID );
-	MaterialSystemMaterial_t hMaterial = FindMaterial( pMaterialName, &bFound, false );
-	if ( bFound )
-	{
-		const char *pChopValue = GetMaterialVar( hMaterial, "%chop" );
-		if ( pChopValue )
-		{
-			float flChopValue;
-			if ( sscanf( pChopValue, "%f", &flChopValue ) > 0 )
-			{
-				patch->chop = flChopValue;
-			}
-		}
-	}
-	*/
 }
 
-
-entity_t *EntityForModel (int modnum)
+entity_t *EntityForModel(int modnum)
 {
-	int		i;
-	char	*s;
-	char	name[16];
+	int i;
+	char *s;
+	char name[16];
 
-	sprintf (name, "*%i", modnum);
-	// search the entities for one using modnum
-	for (i=0 ; i<num_entities ; i++)
+	sprintf(name, "*%i", modnum);
+
+	// Search for an entity using modnum
+	for (i = 0; i < num_entities; i++)
 	{
-		s = ValueForKey (&entities[i], "model");
-		if (!strcmp (s, name))
+		s = ValueForKey(&entities[i], "model");
+		if (!strcmp(s, name))
 			return &entities[i];
 	}
 
@@ -764,7 +729,7 @@ bool PreventSubdivision( CPatch *patch )
 //-----------------------------------------------------------------------------
 // Purpose: subdivide the "parent" patch
 //-----------------------------------------------------------------------------
-int CreateChildPatch( int nParentIndex, winding_t *pWinding, float flArea, const Vector &vecCenter )
+int CreateChildPatch(int nParentIndex, winding_t *pWinding, float flArea, const Vector &vecCenter)
 {
 	int nChildIndex = g_Patches.AddToTail();
 
@@ -786,42 +751,32 @@ int CreateChildPatch( int nParentIndex, winding_t *pWinding, float flArea, const
 	child->winding = pWinding;
 	child->area = flArea;
 
-	VectorCopy( vecCenter, child->origin );
-	if ( ValidDispFace( g_pFaces + child->faceNumber ) )
+	VectorCopy(vecCenter, child->origin);
+
+	// Adjust chop value for child patch
+	if (parent->chop > minchop)
 	{
-		// shouldn't get here anymore!!
-		Msg( "SubdividePatch: Error - Should not be here!\n" );
-		StaticDispMgr()->GetDispSurfNormal( child->faceNumber, child->origin, child->normal, true );
+		child->chop = max(minchop, parent->chop / 2); // Halve chop value
+	}
+
+	// Recalculate normal or get it from parent
+	if (ValidDispFace(g_pFaces + child->faceNumber))
+	{
+		Msg("SubdividePatch: Error - Should not be here!\n");
+		StaticDispMgr()->GetDispSurfNormal(child->faceNumber, child->origin, child->normal, true);
 	}
 	else
 	{
-		GetPhongNormal( child->faceNumber, child->origin, child->normal );
+		GetPhongNormal(child->faceNumber, child->origin, child->normal);
 	}
 
 	child->planeDist = child->plane->dist;
 	WindingBounds(child->winding, child->mins, child->maxs);
 
-	if ( !VectorCompare( child->baselight, vec3_origin ) )
+	if (!VectorCompare(child->baselight, vec3_origin))
 	{
 		// don't check edges on surf lights
 		return nChildIndex;
-	}
-
-	// Subdivide patch towards minchop if on the edge of the face
-	Vector total;
-	VectorSubtract( child->maxs, child->mins, total );
-	VectorScale( total, child->luxscale, total );
-	if ( child->chop > minchop && (total[0] < child->chop) && (total[1] < child->chop) && (total[2] < child->chop) )
-	{
-		for ( int i=0; i<3; ++i )
-		{
-			if ( (child->face_maxs[i] == child->maxs[i] || child->face_mins[i] == child->mins[i] )
-			  && total[i] > minchop )
-			{
-				child->chop = max( minchop, child->chop / 2 );
-				break;
-			}
-		}
 	}
 
 	return nChildIndex;
@@ -831,40 +786,40 @@ int CreateChildPatch( int nParentIndex, winding_t *pWinding, float flArea, const
 //-----------------------------------------------------------------------------
 // Purpose: subdivide the "parent" patch
 //-----------------------------------------------------------------------------
-void SubdividePatch( int ndxPatch )
+void SubdividePatch(int ndxPatch)
 {
 	winding_t *w, *o1, *o2;
-	Vector	total;
-	Vector	split;
-	vec_t	dist;
-	vec_t	widest = -1;
-	int		i, widest_axis = -1;
-	bool	bSubdivide = false;
+	Vector  total;
+	Vector  split;
+	vec_t   dist;
+	vec_t   widest = -1;
+	int     i, widest_axis = -1;
+	bool    bSubdivide = false;
 
 	// get the current patch
-	CPatch *patch = &g_Patches.Element( ndxPatch );
-	if ( !patch )
+	CPatch *patch = &g_Patches.Element(ndxPatch);
+	if (!patch)
 		return;
 
 	// never subdivide sky patches
-	if ( patch->sky )
+	if (patch->sky)
 		return;
 
 	// get the patch winding
 	w = patch->winding;
 
 	// subdivide along the widest axis
-	VectorSubtract (patch->maxs, patch->mins, total);
-	VectorScale( total, patch->luxscale, total );
-	for (i=0 ; i<3 ; i++)
+	VectorSubtract(patch->maxs, patch->mins, total);
+	VectorScale(total, patch->luxscale, total);
+	for (i = 0; i < 3; i++)
 	{
-		if ( total[i] > widest )
+		if (total[i] > widest)
 		{
 			widest_axis = i;
 			widest = total[i];
 		}
 
-		if ( (total[i] >= patch->chop) && (total[i] >= minchop) )
+		if ((total[i] >= patch->chop) && (total[i] >= minchop))
 		{
 			bSubdivide = true;
 		}
@@ -878,42 +833,42 @@ void SubdividePatch( int ndxPatch )
 			if (patch->chop > minchop)
 			{
 				bSubdivide = true;
-				patch->chop = max( minchop, patch->chop / 2 );
+				patch->chop = max(minchop, patch->chop / 2);
 			}
 		}
 	}
 
-	if ( !bSubdivide )
+	if (!bSubdivide)
 		return;
 
 	// split the winding
-	VectorCopy (vec3_origin, split);
+	VectorCopy(vec3_origin, split);
 	split[widest_axis] = 1;
-	dist = (patch->mins[widest_axis] + patch->maxs[widest_axis])*0.5f;
-	ClipWindingEpsilon (w, split, dist, ON_EPSILON, &o1, &o2);
+	dist = (patch->mins[widest_axis] + patch->maxs[widest_axis]) * 0.5f;
+	ClipWindingEpsilon(w, split, dist, ON_EPSILON, &o1, &o2);
 
 	// calculate the area of the patches to see if they are "significant"
 	Vector center1, center2;
-	float area1 = WindingAreaAndBalancePoint( o1, center1 );
-	float area2 = WindingAreaAndBalancePoint( o2, center2 );
+	float area1 = WindingAreaAndBalancePoint(o1, center1);
+	float area2 = WindingAreaAndBalancePoint(o2, center2);
 
-	if( area1 == 0 || area2 == 0 )
+	if (area1 == 0 || area2 == 0)
 	{
-		Msg( "zero area child patch\n" );
+		Msg("zero area child patch\n");
 		return;
 	}
 
 	// create new child patches
-	int ndxChild1Patch = CreateChildPatch( ndxPatch, o1, area1, center1 );
-	int ndxChild2Patch = CreateChildPatch( ndxPatch, o2, area2, center2 );
+	int ndxChild1Patch = CreateChildPatch(ndxPatch, o1, area1, center1);
+	int ndxChild2Patch = CreateChildPatch(ndxPatch, o2, area2, center2);
 
 	// FIXME: This could go into CreateChildPatch if child1, child2 were stored in the patch as child[0], child[1]
-	patch = &g_Patches.Element( ndxPatch );
+	patch = &g_Patches.Element(ndxPatch);
 	patch->child1 = ndxChild1Patch;
-	patch->child2 = ndxChild2Patch;		
+	patch->child2 = ndxChild2Patch;
 
-	SubdividePatch( ndxChild1Patch );
-	SubdividePatch( ndxChild2Patch );
+	SubdividePatch(ndxChild1Patch);
+	SubdividePatch(ndxChild2Patch);
 }
 
 
@@ -1048,11 +1003,6 @@ void SubdividePatches (void)
 
 /*
 =============
-MakeScales
-
-  This is the primary time sink.
-  It can be run multi threaded.
-=============
 */
 int	total_transfer;
 int max_transfer;
@@ -1063,31 +1013,31 @@ int max_transfer;
 //          using formula 81 of Philip Dutre's Global Illumination Compendium,
 //          phil@graphics.cornell.edu, http://www.graphics.cornell.edu/~phil/GI/
 //-----------------------------------------------------------------------------
-float FormFactorPolyToDiff ( CPatch *pPolygon, CPatch* pDifferential )
+float FormFactorPolyToDiff(CPatch *pPolygon, CPatch* pDifferential)
 {
 	winding_t *pWinding = pPolygon->winding;
 
 	float flFormFactor = 0.0f;
 
-	for ( int iPoint = 0; iPoint < pWinding->numpoints; iPoint++ )
+	for (int iPoint = 0; iPoint < pWinding->numpoints; iPoint++)
 	{
-		int iNextPoint = ( iPoint < pWinding->numpoints - 1 ) ? iPoint + 1 : 0;
+		int iNextPoint = (iPoint < pWinding->numpoints - 1) ? iPoint + 1 : 0;
 
 		Vector vGammaVector, vVector1, vVector2;
-		VectorSubtract( pWinding->p[ iPoint ],		pDifferential->origin, vVector1 );
-		VectorSubtract( pWinding->p[ iNextPoint ],	pDifferential->origin, vVector2 );
-		VectorNormalize( vVector1 );
-		VectorNormalize( vVector2 );
-		CrossProduct( vVector1, vVector2, vGammaVector );
-		float flSinAlpha = VectorNormalize( vGammaVector );
+		VectorSubtract(pWinding->p[iPoint], pDifferential->origin, vVector1);
+		VectorSubtract(pWinding->p[iNextPoint], pDifferential->origin, vVector2);
+		VectorNormalize(vVector1);
+		VectorNormalize(vVector2);
+		CrossProduct(vVector1, vVector2, vGammaVector);
+		float flSinAlpha = VectorNormalize(vGammaVector);
 		if (flSinAlpha < -1.0f || flSinAlpha > 1.0f)
 			return 0.0f;
-		vGammaVector *= asin( flSinAlpha );
+		vGammaVector *= asinf(flSinAlpha);
 
-		flFormFactor += DotProduct( vGammaVector, pDifferential->normal );
+		flFormFactor += DotProduct(vGammaVector, pDifferential->normal);
 	}
 
-	flFormFactor *= ( 0.5f / pPolygon->area ); // divide by pi later, multiply by area later
+	flFormFactor *= (0.5f / pPolygon->area); // divide by pi later, multiply by area later
 
 	return flFormFactor;
 }
@@ -1099,154 +1049,94 @@ float FormFactorPolyToDiff ( CPatch *pPolygon, CPatch* pDifferential )
 //          greater than patch size.  Lecture slides by Pat Hanrahan,
 //          http://graphics.stanford.edu/courses/cs348b-00/lectures/lecture17/radiosity.2.pdf
 //-----------------------------------------------------------------------------
-float FormFactorDiffToDiff ( CPatch *pDiff1, CPatch* pDiff2 )
+float FormFactorDiffToDiff(CPatch *pDiff1, CPatch* pDiff2)
 {
 	Vector vDelta;
-	VectorSubtract( pDiff1->origin, pDiff2->origin, vDelta );
-	float flLength = VectorNormalize( vDelta );
+	VectorSubtract(pDiff1->origin, pDiff2->origin, vDelta);
+	float flLength = VectorNormalize(vDelta);
 
-	return -DotProduct( vDelta, pDiff1->normal ) * DotProduct( vDelta, pDiff2->normal ) / ( flLength * flLength );
+	return -DotProduct(vDelta, pDiff1->normal) * DotProduct(vDelta, pDiff2->normal) / (flLength * flLength);
 }
 
 
 
-void MakeTransfer( int ndxPatch1, int ndxPatch2, transfer_t *all_transfers )
-//void MakeTransfer (CPatch *patch, CPatch *patch2, transfer_t *all_transfers )
+void MakeTransfer(int ndxPatch1, int ndxPatch2, transfer_t *all_transfers)
 {
-	Vector	delta;
-	vec_t	scale;
-	float	trans;
-	transfer_t *transfer;
-
-	//
-	// get patches
-	//
-	if( ndxPatch1 == g_Patches.InvalidIndex() || ndxPatch2 == g_Patches.InvalidIndex() )
+	if (ndxPatch1 == g_Patches.InvalidIndex() || ndxPatch2 == g_Patches.InvalidIndex())
 		return;
 
-	CPatch *pPatch1 = &g_Patches.Element( ndxPatch1 );
-	CPatch *pPatch2 = &g_Patches.Element( ndxPatch2 );
+	CPatch *pPatch1 = &g_Patches.Element(ndxPatch1);
+	CPatch *pPatch2 = &g_Patches.Element(ndxPatch2);
 
-	if (IsSky( &g_pFaces[ pPatch2->faceNumber ] ) )
+	if (IsSky(&g_pFaces[pPatch2->faceNumber]))
 		return;
 
-	// overflow check!
-	if ( pPatch1->numtransfers >= MAX_PATCHES)
-	{
-		return;
-	}
+	// Calculate scale factor
+	float scale = FormFactorDiffToDiff(pPatch2, pPatch1);
 
-	// hack for patch areas that area <= 0 (degenerate)
-	if ( pPatch2->area <= 0)
-	{
-		return;
-	}
-
-	transfer = &all_transfers[pPatch1->numtransfers];
-
-	scale = FormFactorDiffToDiff( pPatch2, pPatch1 );
-
-	// patch normals may be > 90 due to smoothing groups
 	if (scale <= 0)
-	{
-		//Msg("scale <= 0\n");
 		return;
-	}
 
 	// Test 5 times rule
 	Vector vDelta;
-	VectorSubtract( pPatch1->origin, pPatch2->origin, vDelta );
-	float flThreshold = ( M_PI * 0.04 ) * DotProduct( vDelta, vDelta );
+	VectorSubtract(pPatch1->origin, pPatch2->origin, vDelta);
+	float flThreshold = (M_PI * 0.04f) * DotProduct(vDelta, vDelta);
 
 	if (flThreshold < pPatch2->area)
 	{
-		scale = FormFactorPolyToDiff( pPatch2, pPatch1 );
-		if (scale <= 0.0)
+		scale = FormFactorPolyToDiff(pPatch2, pPatch1);
+		if (scale <= 0.0f)
 			return;
 	}
 
-	trans = (pPatch2->area*scale);
+	float trans = (pPatch2->area * scale);
 
 	if (trans <= TRANSFER_EPSILON)
-	{
 		return;
-	}
+
+	transfer_t *transfer = &all_transfers[pPatch1->numtransfers];
 
 	transfer->patch = pPatch2 - g_Patches.Base();
-
-	// FIXME: why is this not trans?
 	transfer->transfer = trans;
-
-#if 0
-	// DEBUG! Dump patches and transfer connection for displacements.  This creates a lot of data, so only
-	// use it when you really want it - that is why it is #if-ed out.
-	if ( g_bDumpPatches )
-	{
-		if ( !pFpTrans )
-		{
-			pFpTrans = g_pFileSystem->Open( "trans.txt", "w" );
-		}
-		Vector light = pPatch1->totallight.light[0] + pPatch1->directlight;
-		WriteWinding( pFpTrans, pPatch1->winding, light );
-		light = pPatch2->totallight.light[0] + pPatch2->directlight;
-		WriteWinding( pFpTrans, pPatch2->winding, light );
-		WriteLine( pFpTrans, pPatch1->origin, pPatch2->origin, Vector( 255, 0, 255 ) );
-	}
-#endif
-
 	pPatch1->numtransfers++;
 }
 
 
-void MakeScales ( int ndxPatch, transfer_t *all_transfers )
+void MakeScales(int ndxPatch, transfer_t *all_transfers)
 {
-	int		j;
-	float	total;
-	transfer_t	*t, *t2;
-	total = 0;
-
-	if( ndxPatch == g_Patches.InvalidIndex() )
+	if (ndxPatch == g_Patches.InvalidIndex())
 		return;
-	CPatch *patch = &g_Patches.Element( ndxPatch );
+
+	CPatch *patch = &g_Patches.Element(ndxPatch);
 
 	// copy the transfers out
 	if (patch->numtransfers)
 	{
-		if (patch->numtransfers > max_transfer)
-		{
-			max_transfer = patch->numtransfers;
-		}
-
-
-		patch->transfers = ( transfer_t* )calloc (1, patch->numtransfers * sizeof(transfer_t));
+		patch->transfers = (transfer_t *)calloc(1, patch->numtransfers * sizeof(transfer_t));
 		if (!patch->transfers)
-			Error ("Memory allocation failure");
+			Error("Memory allocation failure");
 
-		// get total transfer energy
-		t2 = all_transfers;
+		float total = 0.0f;
+		transfer_t *t2 = all_transfers;
 
-		// overflow check!
-		for (j=0 ; j<patch->numtransfers ; j++, t2++)
+		// Calculate total transfer energy
+		for (int j = 0; j < patch->numtransfers; j++, t2++)
 		{
 			total += t2->transfer;
 		}
 
-		// the total transfer should be PI, but we need to correct errors due to overlaping surfaces
+		// Normalize transfers
 		if (total > M_PI)
-			total = 1.0f/total;
-		else	
-			total = 1.0f/M_PI;
+			total = 1.0f / total;
+		else
+			total = 1.0f / M_PI;
 
-		t = patch->transfers;
+		transfer_t *t = patch->transfers;
 		t2 = all_transfers;
-		for (j=0 ; j<patch->numtransfers ; j++, t++, t2++)
+		for (int j = 0; j < patch->numtransfers; j++, t++, t2++)
 		{
-			t->transfer = t2->transfer*total;
+			t->transfer = t2->transfer * total;
 			t->patch = t2->patch;
-		}
-		if (patch->numtransfers > max_transfer)
-		{
-			max_transfer = patch->numtransfers;
 		}
 	}
 	else
@@ -1255,9 +1145,9 @@ void MakeScales ( int ndxPatch, transfer_t *all_transfers )
 		// patch->totallight[2] = 255;
 	}
 
-	ThreadLock ();
+	ThreadLock();
 	total_transfer += patch->numtransfers;
-	ThreadUnlock ();
+	ThreadUnlock();
 }
 
 /*

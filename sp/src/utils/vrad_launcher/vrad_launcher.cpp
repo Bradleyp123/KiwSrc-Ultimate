@@ -65,7 +65,7 @@ int main(int argc, char* argv[])
 	// twice, once with -hdr and once without
 	int both_arg=0;
 	for(int arg=1;arg<argc;arg++)
-		if (Q_stricmp(argv[arg],"-both")==0)
+		if (Q_stricmp(argv[arg],"-both")==0) //why do we still have this?
 		{
 			both_arg=arg;
 		}

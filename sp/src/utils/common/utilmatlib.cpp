@@ -54,7 +54,7 @@ void LoadMaterialSystemInterface( CreateInterfaceFn fileSystemFactory )
 	}
 }
 
-void InitMaterialSystem( const char *materialBaseDirPath, CreateInterfaceFn fileSystemFactory )
+void InitMaterialSystem(const char *materialBaseDirPath, CreateInterfaceFn fileSystemFactory, g_pMaterialSystem->ModInit())
 {
 	LoadMaterialSystemInterface( fileSystemFactory );
 	MaterialSystem_Config_t config;
