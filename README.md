@@ -22,6 +22,7 @@ Happy Modding my fellow Internet Dweller!
 
 # Current Issues 
 ## PBR Shaders do not function
+-Unknowen Reasion, Shaders show up as a blue-ified brush and console states "PBR_PS30.FXC" isnt found
 
 
 
