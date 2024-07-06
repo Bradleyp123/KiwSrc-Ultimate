@@ -1,6 +1,6 @@
 # **Kiwi-Source**
 ![SOURCE](https://github.com/Bradleyp123/Kiwi-Source/assets/87635756/0ad57f7a-82fb-4077-8d73-40e69dbc1d09)
-
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## What is KiwiSrc?
 ### KiwiSrc is a small project with the goal of providing a modernized version of source SDK, It is based on both Mapbase and Source SDK 2013 Community Edition. 
 
@@ -9,7 +9,6 @@
 
 
 # Installation
-
 ## Windows
 Installation on windows is almost identicle to any other version of SDK2013. Clone of repo:
 Install GIT/GITHUB
