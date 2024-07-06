@@ -21,9 +21,9 @@ Happy Modding my fellow Internet Dweller!
 
 # Current Issues 
 ## PBR Shaders do not function
--Unknowen Reasion, Shaders show up as a blue-ified brush and console states "PBR_PS30.FXC" isnt found
+-Unknowen Reason, Shaders show up as a blue-ified brush and console states "PBR_PS30.FXC" isnt found
 ## VRAD Shadows can be blocky
--Issue with Float Variable "luxeldensity" Under "VRAD.cpp"
+-Issue with Float Variable "luxeldensity" Under "VRAD.cpp" (Higher should equate to more luxels, but it causes issues and makes shadows blocky)
 
 
 
