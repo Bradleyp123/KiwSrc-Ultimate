@@ -1,10 +1,43 @@
-# Kiwi-Source
+# ** Kiwi-Source **
 ![SOURCE](https://github.com/Bradleyp123/Kiwi-Source/assets/87635756/0ad57f7a-82fb-4077-8d73-40e69dbc1d09)
-Custom version of Source Engine, based on Mapbase and SDK 2013 CE.
 
-Kiwi Source (KiwiSrc) is a custom built version of Valves Source®️ Engine SDK, It is based on both Mapbase (all code excluding KiwiSrc, Material System and VRAD) and Source SDK 2013 Community Edition. 
+## What is KiwiSrc?
+### KiwiSrc is a small project with the goal of providing a modernized version of source SDK, It is based on both Mapbase and Source SDK 2013 Community Edition. 
 
-KiwiSrc's goal is to create a "Semi-Modern" version of Source engine. This means improved VRAD, Improved Randering, More reliance on GPU and memory and a host of other improvements. This isn't ment to be the engine the next TitanFall runs on nor will it be, it is for the community by the community.
+## Why dose this exist?
+### Personaly i like the mapping system used in hammer and overall BSP. I also love the source engine, This lead to the creation of KiwiSRc.
 
-NOTES:
-No MP, Issues with and BSP-Debug
+
+# Installation
+
+## Windows
+Installation on windows is almost identicle to any other version of SDK2013. Clone of repo:
+Install GIT/GITHUB
+Open CMD (not in Admin)
+Type "Git Clone https://github.com/Bradleyp123/KiwSrc-Ultimate.git"
+Wait for the command to finish.
+Done!!!
+Happy Modding my fellow Internet Dweller!
+
+
+# Current Issues 
+## PBR Shaders do not function
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
